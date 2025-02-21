@@ -5,10 +5,10 @@ FROM golang:1.22
 WORKDIR /app
 
 # Copy the Go module files
-COPY go.mod go.sum ./
+COPY go.mod ./
 
 # Download and install the project dependencies
-RUN go mod download
+RUN go mod tidy && go mod download
 
 # Copy the rest of the project files
 COPY . .
@@ -16,7 +16,7 @@ COPY . .
 # Build the Go application
 RUN go build -o app
 
-EXPOSE 80
+EXPOSE 8080
 
 # Set the entry point for the container
 CMD ["./app"]
