@@ -13,10 +13,3 @@ build/
 
 # Ignore the coverage files
 *.out
-
-# Ignore the Go modules
-go.sum
-go.mod
-
-# Ignore the Dockerfile
-Dockerfile
