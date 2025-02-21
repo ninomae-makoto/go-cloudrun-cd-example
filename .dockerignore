@@ -1,0 +1,22 @@
+# Ignore the vendor directory
+vendor/
+
+# Ignore the binary output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore the build directory
+build/
+
+# Ignore the coverage files
+*.out
+
+# Ignore the Go modules
+go.sum
+go.mod
+
+# Ignore the Dockerfile
+Dockerfile
